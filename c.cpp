@@ -75,9 +75,7 @@
 //     return 0;
 // }
 
-
-
-//String in c++//
+// String in c++//
 
 // #include<iostream>
 // #include<string>
@@ -95,11 +93,23 @@
 // return 0 ;
 // }
 
+// #include <iostream>
+// using namespace std;
 
+// int main()
+// {
+//     int arr[5] = {0, 1, 2, 3, 4};
+//     int reversedArr[5];
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << arr[i] << " ";
+//         reversedArr[i] = arr[4 - i];
+//     }
+//     cout << "" << endl;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << reversedArr[i] << " ";
+//     }
 
-
-
-
-
-
-
+//     return 0;
+// }
