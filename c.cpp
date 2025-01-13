@@ -98,18 +98,52 @@
 
 // int main()
 // {
-//     int arr[5] = {0, 1, 2, 3, 4};
-//     int reversedArr[5];
-//     for (int i = 0; i < 5; i++)
+// int arr[5] = {0, 1, 2, 3, 4};
+// int reversedArr[5];
+// for (int i = 0; i < 5; i++)
+// {
+//     cout << arr[i] << " ";
+//     reversedArr[i] = arr[4 - i];
+// }
+// cout << "" << endl;
+// for (int i = 0; i < 5; i++)
+// {
+//     cout << reversedArr[i] << " ";
+// }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main()
+// {
+//     string arr[] = {"this", "is", "my", "home"};
+//     int size = sizeof(arr) / sizeof(arr[0]);
+
+//     cout << "Size of the array: " << size << endl;
+
+//     string reversedArr[4];
+//     for (int i = 0; i < size; i++)
+//     {
+//         reversedArr[i] = arr[size - 1 - i];
+//     }
+
+//     cout << "Original Array: ";
+//     for (int i = 0; i < size; i++)
 //     {
 //         cout << arr[i] << " ";
-//         reversedArr[i] = arr[4 - i];
 //     }
-//     cout << "" << endl;
-//     for (int i = 0; i < 5; i++)
+//     cout << endl;
+
+//     cout << "Reversed Array: ";
+//     for (int i = 0; i < size; i++)
 //     {
 //         cout << reversedArr[i] << " ";
 //     }
+//     cout << endl;
 
 //     return 0;
 // }
