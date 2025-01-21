@@ -147,3 +147,35 @@
 
 //     return 0;
 // }
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+// int main()
+// {
+//     string str;
+//     string word = "";
+//     string result = "";
+//     cout << "Enter a string: ";
+//     getline(cin, str);
+
+//     for (int i = 0; i < str.length(); ++i)
+//     {
+//         char ch = str[i];
+//         if (ch == ' ' || ch == '.')
+//         {
+//             for (int j = word.length() - 1; j >= 0; --j)
+//             {
+//                 result += word[j];
+//             }
+//             result += ch;
+//             word = "";
+//         }
+//         else
+//         {
+//             word += ch;
+//         }
+//     }
+//     cout << "Reversed string: " << result << endl;
+//     return 0;
+// }
