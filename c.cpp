@@ -179,3 +179,63 @@
 //     cout << "Reversed string: " << result << endl;
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+// int inp;
+// cin>>inp;
+//     int arr[inp] = {1, 2, 3, 4};
+
+//     for (int i = 0; i < 4; i++)
+//     {
+//         cout << arr[i];
+//     }
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int size;
+//     cout << "Enter the size of the array: ";
+//     cin >> size;
+
+//     int *arr = new int[size];
+
+//     cout << "Enter " << size << " elements: ";
+//     for (int i = 0; i < size; ++i)
+//     {
+//         cin >> arr[i];
+//     }
+//     cout << "You entered: ";
+//     for (int i = 0; i < size; ++i)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int array[3] = {4, 2, 6};
+
+//     for (int i = 0; i < 3; i++)
+//     {
+
+//         cout << array[i] * array[i] << " ";
+//     }
+
+//     return 0;
+// }
