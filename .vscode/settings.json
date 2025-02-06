@@ -3,6 +3,8 @@
     "iterator": "cpp",
     "xutility": "cpp",
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp"
   }
 }
