@@ -423,54 +423,201 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int binarySearch(int array[], int low, int high, int target)
-{
-    if (low <= high)
-    {
-        int mid = (low + high) / 2;
+// int binarySearch(int array[], int low, int high, int target)
+// {
+//     if (low <= high)
+//     {
+//         int mid = (low + high) / 2;
 
-        if (array[mid] == target)
-        {
-            return mid;
-        }
-        if (target < array[mid])
-        {
-            return binarySearch(array, low, mid - 1, target);
-        }
-        return binarySearch(array, mid + 1, high, target);
-    }
-    return -1;
-}
+//         if (array[mid] == target)
+//         {
+//             return mid;
+//         }
+//         if (target < array[mid])
+//         {
+//             return binarySearch(array, low, mid - 1, target);
+//         }
+//         return binarySearch(array, mid + 1, high, target);
+//     }
+//     return -1;
+// }
 
-int main()
-{
-    int size;
-    cout << "Enter the array size : ";
-    cin >> size;
-    int array[size];
-    cout << "Enter the array Element according to size :";
-    for (int i = 0; i < size; i++)
-    {
-        cin >> array[i];
-    }
+// int main()
+// {
+//     int size;
+//     cout << "Enter the array size : ";
+//     cin >> size;
+//     int array[size];
+//     cout << "Enter the array Element according to size :";
+//     for (int i = 0; i < size; i++)
+//     {
+//         cin >> array[i];
+//     }
 
-    int target = 40;
-    int low = 0;
-    int high = size - 1;
+//     int target = 40;
+//     int low = 0;
+//     int high = size - 1;
 
-    int result = binarySearch(array, low, high, target);
+//     int result = binarySearch(array, low, high, target);
 
-    if (result == -1)
-    {
-        cout << "Element is not found" << endl;
-    }
-    else
-    {
-        cout << "Element is found at index: " << result << endl;
-    }
+//     if (result == -1)
+//     {
+//         cout << "Element is not found" << endl;
+//     }
+//     else
+//     {
+//         cout << "Element is found at index: " << result << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <iostream>
+// #include <fstream>
+// using namespace std;
+// #include <string>
+
+// int main()
+// {
+
+// ofstream write("test.txt");
+// write << "I am learning file handeling in c++";
+
+// string st;
+// ifstream read("test.txt");
+// getline(read, st);
+
+// read >> st;
+// cout << st;
+
+// ofstream write;
+// write.open("abc.txt",ios::app);
+// write << "forex trader,now i am learning c++" << endl;
+// write.close();
+
+// string st;
+// ifstream read;
+// read.open("abc.txt");
+// getline(read, st);
+// cout << st;
+// read.close();
+
+// ofstream write("user.txt");
+// string str;
+
+// for (int i = 0; i < 3; i++)
+// {
+//     cout << i + 1 << ": ";
+//     getline(cin, str);
+//     write << str << endl;
+// }
+// ifstream read("user.txt");
+// cout << "\nData read file:" << endl;
+// for (int i = 0; i < 3; i++)
+// {
+//     getline(read, str);
+//     cout << i + 1 << ": " << str << endl;
+// }
+
+// ofstream copy("copy.txt");
+
+// copy << str;
+
+// ofstream("saif.txt") << "I am web developer";
+// string str;
+
+// ifstream read("saif.txt");
+// getline(read, str);
+// cout << str << endl;
+// ofstream("aif2.txt") << str;
+
+// return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int stack[5];
+// int top = -1;
+
+// void stackpush(int x)
+// {
+//     if (top == 4)
+//     {
+//         cout << "Stack is full " << x << endl;
+//     }
+//     else
+//     {
+//         top++;
+//         stack[top] = x;
+//     }
+// }
+
+// void display()
+// {
+
+//     if (top == -1)
+//     {
+//         cout << "stack is empaty";
+//     }
+//     else
+//     {
+
+//         for (int i = top; i >= 0; i--)
+//         {
+//             cout << stack[i];
+//         }
+//     }
+// }
+
+// int main()
+// {
+//     stackpush(1);
+//     stackpush(2);
+//     stackpush(3);
+//     stackpush(4);
+//     stackpush(5);
+
+//     display();
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// #include <string>
+
+// class cars
+// {
+
+// public:
+//     string brand;
+//     string model;
+//     double price;
+// };
+
+// int main()
+// {
+//     cars car1 = {"BMW", "Competition8", 12.556};
+//     cars car2 = {"Ford", "Mustang", 55.289};
+//     cars car3 = {"Audi", "R8", 80.999};
+//     cars car4 = {"Mercedes", "AMG GT", 120.450};
+//     cars car5 = {"Tesla", "Model S", 85.600};
+//     cars car6 = {"Porsche", "911 Turbo", 150.789};
+//     cars car7 = {"Lamborghini", "Huracan", 230.999};
+//     cars car8 = {"Ferrari", "488 GTB", 280.670};
+//     cars car9 = {"McLaren", "720S", 300.120};
+//     cars car10 = {"Bugatti", "Chiron", 3500.999};
+
+//     cars array[10] = {car1, car2, car3, car4, car5, car6, car7, car8, car9, car10};
+
+//     for (int i = 0; i < 10; i++)
+//     {
+
+//         cout << array[i].brand << ":" << "Car Model: " << array[i].model << "Car price: " << array[i].price << endl;
+//     }
+
+//     return 0;
+// }
